@@ -1,4 +1,4 @@
-import pickle
+import pickle5 as pickle
 from flask import Flask,request,jsonify,json,render_template
 import pandas as pd
 from sklearn.preprocessing import StandardScaler

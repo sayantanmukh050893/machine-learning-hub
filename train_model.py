@@ -6,7 +6,7 @@ warnings.filterwarnings("ignore")
 from util import Util
 from sklearn.preprocessing import StandardScaler
 import glob
-import pickle
+import pickle5 as pickle
 from matplotlib import pyplot as plt
 import seaborn as sns
 cwd = os.getcwd()
