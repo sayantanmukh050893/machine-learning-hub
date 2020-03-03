@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PIMA INDIAN DIABETES</title>
+  </head>
+  <body>
+    <h1> DIABTES PREDICTION </h1>
+    <form action="{{ url_for('predict')}}"method="post">
+
+      <label for="pregnancies">Pregancies:</label>
+      <input type="text" id="pregnancies" name="pregnancies"><br><br>
+
+      <label for="glucose">Glucose:</label>
+      <input type="text" id="glucose" name="glucose"><br><br>
+
+      <label for="bloodPressure">Blood Pressure:</label>
+      <input type="text" id="bloodPressure" name="bloodPressure"><br><br>
+
+      <label for="skinThickness">Skin Thickness:</label>
+      <input type="text" id="skinThickness" name="skinThickness"><br><br>
+
+      <label for="insulin">Insulin:</label>
+      <input type="text" id="insulin" name="insulin"><br><br>
+
+      <label for="bmi">BMI:</label>
+      <input type="text" id="bmi" name="bmi"><br><br>
+
+      <label for="diabetesPedigreeFunction">Diabetes Pedigree Function:</label>
+      <input type="text" id="diabetesPedigreeFunction" name="diabetesPedigreeFunction"><br><br>
+
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age"><br><br>
+
+      <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+
+    </form>
+
+    {{ prediction_text }}
+
+  </body>
+</html>
